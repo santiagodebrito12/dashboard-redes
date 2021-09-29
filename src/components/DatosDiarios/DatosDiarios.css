@@ -1,0 +1,54 @@
+.contenedor-diarios h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+.contenedor-cards-diarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-diarios{
+    margin-top: 20px;
+    background-color: #252B42;
+    width: 260px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px
+}
+body.ligth-theme .card-diarios{
+    background-color: #F1F3FA;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-diarios:hover{
+   background-color: rgba(0, 0,0, 0.1);
+}
+.card-diarios div{
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-diarios-titulo{
+    color: var(--textGray);
+    font-size: 18px;
+    font-weight: 800;
+}
+.card-diarios div img{
+    width: 30px;
+    height: 30px;
+}
+.card-diarios div h1{
+    font-size: 35px;
+    font-weight: 800;
+}
+@media(max-width:500px){
+    .contenedor-cards-diarios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

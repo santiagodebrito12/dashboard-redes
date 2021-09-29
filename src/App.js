@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DatosDiarios from './components/DatosDiarios/DatosDiarios';
+import DatosGenerales from './components/DatosGenerales/DatosGenerales';
+import Header from './components/Header/Header';
+import ThemeState from './ThemeContext/ThemeState';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeState>
+      <div className="container mt-2">
+        <Header/>
+      </div>
+      <div className="container mt-4">
+        <DatosGenerales/>
+      </div>
+      <div className="container mt-5">
+        <DatosDiarios/>
+      </div>
+
+    </ThemeState>
   );
 }
 
